@@ -34,19 +34,18 @@
     border: none !important;
     background-color: #f1f0ff !important;
     margin-left: 2px !important;
+    
   }
   
   .rbc-toolbar button.rbc-active {
     background-color: #dbdafe !important;
     box-shadow: none !important;
+    
   }
-  
   .rbc-time-view {
     border-color: #eee !important;
+    
   }
-  
-
-  
   .rbc-time-content {
     border: none !important;
   }
@@ -99,8 +98,19 @@
   .rbc-event:nth-child(8) {
     background-color: #fdf2fb !important;
   }
+
   
-  .rbc-event-label{
-    color: gray !important;
-    margin-bottom: 5px;
+/* Add this CSS block */
+@media (max-width: 1024px) {
+  .BigCalendar {
+    height: 90vh !important; /* Maintain height for tablet view */
+    width: 150vw !important; /* Maintain width for tablet view */
   }
+}
+
+@media (max-width: 767px) {
+  .BigCalendar {
+    height: 90vh !important; /* Maintain height for mobile view */
+    width: 250vw !important; /* Maintain width for mobile view */
+  }
+} 
